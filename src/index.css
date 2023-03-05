@@ -5,6 +5,9 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: aquamarine;
+  display: grid;
+
 }
 
 code {
@@ -12,9 +15,49 @@ code {
     monospace;
 }
 
+.gridCont {
+  display: grid;
+  grid-template-columns: 1fr 1fr ;
+  grid-template-rows: 1fr;
+  height: 100vh;
+
+}
+
+.pageLeft {
+  grid-row: 1 / 2;
+  grid-template-rows: 1fr / 1fr;
+}
+
+.pageRight {
+  grid-row: 2 / 3;
+}
+
 .formFlow {
   display: grid;
-  width: 50%;
+  width: 70%;
   justify-items: left;
   margin: 20px;
+}
+
+.resumeFlow {
+  display: grid;
+  width: 70%;
+  justify-items: left;
+  margin: 20px;
+  height: 100vh;
+  grid-template-rows: 1fr / 1fr;
+
+
+}
+
+input, textarea {
+  background-color: transparent;
+}
+
+.resHeader {
+  grid-row-start: 1;
+}
+
+.resCompany {
+  grid-row: 2 / 3;
 }
