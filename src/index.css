@@ -17,7 +17,7 @@ code {
 
 .gridCont {
   display: grid;
-  grid-template-columns: 1fr 1fr ;
+  grid-template-columns: .8fr 1fr ;
   grid-template-rows: 1fr;
   height: 100vh;
 
@@ -41,11 +41,12 @@ code {
 
 .resumeFlow {
   display: grid;
-  width: 70%;
+  width: 90%;
   justify-items: left;
   margin: 20px;
   height: 100vh;
-  grid-template-rows: 1fr / 1fr;
+  grid-template-columns: 1fr;
+  grid-template-rows: .3fr
 
 
 }
@@ -55,9 +56,33 @@ input, textarea {
 }
 
 .resHeader {
+  display: flex;
+  flex-direction: row;
   grid-row-start: 1;
 }
 
 .resCompany {
   grid-row: 2 / 3;
+}
+
+.resName { 
+  font-size:xx-large;
+  font-weight:bold;
+}
+
+.resPersonal {
+align-self: flex-end;
+margin-left: 100px;
+}
+
+.resCompHeader {
+  font-size: large;
+  font-weight: bold;
+  margin-bottom: 20px;
+  margin-top: 30px;
+
+}
+
+.resCompName {
+  font-weight: bold;
 }
